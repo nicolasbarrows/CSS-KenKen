@@ -2,6 +2,97 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  background-color: seagreen;
+}
+
+main {
+  padding: 1rem;
+  color: black;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  font-size: 5rem;
+  margin: 1rem;
+}
+
 html {
-  font-size: 10px;
+  font-size: 8px;
+}
+
+.grid {
+  width: 90vmin;
+  max-width: 600px;
+  height: 90vmin;
+  max-height: 600px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  border: 0.5rem solid #062D10;
+}
+
+.grid-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid gray;
+  font-size: 2rem;
+  background-color: white;
+  position: relative;
+}
+
+.grid-items:hover {
+  background-color: #DDEEE1;
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box8,
+#box9,
+#box10,
+#box11 {
+  border-bottom: 0.5rem solid #062D10;
+}
+
+#box3,
+#box7,
+#box10,
+#box11,
+#box12,
+#box15 {
+  border-left: 0.5rem solid #062D10;
+}
+
+.prompt {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  margin: 0.25rem;
+}
+
+.answer {
+  width: 75%;
+  height: 75%;
+  text-align: center;
+  border: none;
+  font-size: 2rem;
+  background-color: inherit;
+}
+
+@media screen and (min-width: 475px) {
+  html {
+    font-size: 16px;
+  }
 }
